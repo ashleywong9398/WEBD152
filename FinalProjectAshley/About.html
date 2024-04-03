@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Jolla Restaurant on the Water -- Shoreline Dining </title>
+    <style>
+        body, #wrapper {
+            margin: 0;
+            padding: 0;
+        }
+        #header, #footer {
+            font-family:Georgia, serif;
+            background-color: #4e4a4a; 
+            color: white; 
+            font-size: xx-large;
+            padding: 15px; 
+        }
+        #footer {
+            text-align: center;
+        }
+        #footer-text {
+            font-size: small;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+        }
+        #link-container{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: inline-block;
+            text-align: center;
+        }
+        #footer-links{
+            text-align: center;
+        }
+        #header a {
+            color: orange;
+            font-size: small;
+            padding: 0 10px;
+        }
+        #footer a {
+            color: white;
+            font-size: small;
+            padding: 0px 10px;  
+            display: inline-block;  
+            width: auto; 
+            text-decoration: none; 
+            text-align: center;
+        }
+        #footer a:hover {
+        text-decoration: underline dotted white; 
+        }
+        #footer-text {
+            font-size: small; 
+        }
+       
+        #image-container {
+            display: inline-block;
+            vertical-align: middle;
+            width: auto;
+            text-align: center; 
+            margin-bottom: 20px; 
+        } 
+        #header a.title {
+            text-decoration: none; 
+            color: white; 
+            font-family: Georgia, serif; 
+            font-size: xx-large;
+        }
+        h1 {
+            text-decoration: none; 
+            color: black; 
+            font-family: Georgia, serif; 
+            font-size: xx-large;
+            text-align: center;
+        }
+        h3 {
+            font-size: large;
+            font-family: Georgia, serif;
+            letter-spacing: 4px;
+            color: black;
+            text-align: center;
+        }
+        p {
+            font-weight: normal;
+            font-family: Georgia, serif;
+            font-size: large;
+            color: black;
+            line-height: 1.5;
+            text-align: center;
+            margin-left: 50px; 
+            margin-right: 50px; 
+        }
+        .item {
+            font-style: italic;
+            font-family: Georgia;
+            font-size: large;
+            color: black;
+            text-align: left;
+        }
+        #content {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: flex-start; 
+        padding: 10px;
+        }
+
+        .top-container {
+        text-align: center; 
+        margin-bottom: 20px; 
+        }
+        .bottom-container {         
+        display: flex; 
+        justify-content: space-between;
+        align-items: center; 
+        width: 100%;
+        }
+        .left-container,
+        .right-container {
+        flex: 1; 
+        padding: 10px;
+        }
+        .left-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        }
+        .right-container {
+        border-left: 1px solid rgb(182, 175, 175);
+       
+        padding-top: 10px; 
+        }
+        .left-container video {
+        max-width: 100%;
+        height: auto;
+        }
+    </style>    
+</head>
+<body>
+    <div id="wrapper" class="clearfix">
+        <header id="header">
+            <a href="FinalProjectAssignment.html" class="title">SHORELINE DINING</a>
+            <div id="link-container">
+                <a href="FinalProjectAssignment.html" id="home-link">Home</a> 
+                <a href="Menu.html">Menu</a> 
+                <a href="About.html">About</a>
+                <a href="Contact.html">Contact</a> 
+            </div>
+        </header>
+
+        <div id="content">
+            <div class="top-container">
+                <div id="image-container">
+                    <img src="images/about-the-restaurant.jpg" alt="About" />
+                </div>
+                <h1>ABOUT US</h1>
+            </div>
+            <p>Welcome to our seaside restaurant! 
+            We are a newly opened Western-style restaurant located in a beautiful coastal area.
+            The atmosphere is warm and inviting, nestled along the coast with stunning seaside views.
+            We take pride in offering delicious Western cuisine to satisfy your taste buds. 
+            Whether you're indulging in fresh seafood, creative seasonal dishes, or savoring our signature specialties, you'll find satisfying culinary delights here.
+           </p>
+            <div class="bottom-container"> 
+                <div class="left-container">
+                    
+                    <video controls width="500" height="500">
+                        <source src="images/dining.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+        
+                <div class="right-container">
+                    <h3>Welcome to</h3>
+                    <h3>SHORELINE DINING</h3>
+                    <p class="item">
+                        Our culinary team carefully prepares each dish to ensure an unforgettable dining experience for you. In addition to great food, our restaurant provides a pleasant ambiance where you can gather with friends and loved ones, celebrate special occasions, or simply enjoy a tranquil evening by the shore. 
+                        Whether you're a local resident or a traveler from afar, we welcome you to join our extended family and explore our exciting menu and captivating seaside views. 
+                        Thank you for choosing to dine with us, and we look forward to providing you with a wonderful dining experience.</p>
+                    <p class="item">If you require additional information and/or photography, please contact Shoreline Dining's Marketing Department at 858.756.**** or Marketing@Shoreline.com. Thank you for your interest!</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="footer-links">
+                <a href="FinalProjectAssignment.html">Home</a> 
+                <a href="Menu.html">Menu</a>
+                <a href="About.html">About</a> 
+                <a href="Contact.html">Contact</a> 
+            </div>
+            <div id="footer-text">© Copyright S D Restaurants 2023 • All Rights Reserved • Website by Ashley • Privacy Policy & Terms of Use</div>
+    </div>
+</body>
+</html>

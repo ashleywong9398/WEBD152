@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Black Goose Bistro Summer Menu</title>
+    <style>   
+ body {
+            background-color: rgba(231, 241, 173, 0.685);
+            background-image: url('images/blackgoose.png'), url('images/gooseshadow.png'), url('images/plaid.png');
+            background-repeat: no-repeat, no-repeat, no-repeat;
+            background-position: center 30%, 80vw 18vh, center top;
+            background-size: 30% auto, 5%, 85% 30%; 
+            background-attachment: scroll, scroll, scroll;
+        }
+        #left-dots {
+            left: 8%;
+            position: absolute;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #right-dots {
+            right: 8%;
+            position: absolute;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .dot {
+            background-image: url('images/purpledot.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 30px;
+            height: 30px;
+            margin-bottom: 0;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 1.5em;
+            font-family:"Marko One" Georgia, serif;
+            color: rgba(134, 12, 124, 0.904);
+            text-align: center;
+        }
+        h3 {
+            font-size: 1.2em;
+            font-family: Georgia, serif;
+            letter-spacing: 5px;
+            color: tomato;
+            text-align: center;
+        }
+        p {
+            font-family: Georgia, serif;
+            font-weight: normal;
+            font-size: medium;
+            color: black;
+            line-height: 1;
+            text-align: center;
+        }
+        .title{
+            font-weight: normal;
+            font-size: small;
+            color: rgba(134, 12, 124, 0.904);
+            font-family: Georgia, serif;
+            text-align: center;
+        }
+        .location {
+            font-style: italic;
+            font-size: small;
+            color: black;
+            font-family: Georgia, serif;
+        }
+        .hours {
+            font-weight: bold;
+            font-size: small;
+            color: black;
+            font-family: Georgia, serif;
+        }
+        .hours1 {
+            font-weight: bold;
+            font-size: x-small;
+            color: black;
+            font-family: Georgia, serif;
+        }
+        .time {
+            font-style: italic;
+            font-family: Georgia;
+            color: black;
+        }
+        .item-title {
+            font-weight: bold;
+            font-size: medium;
+            color: black;
+            text-align: left;
+        }
+        .item-title1 {
+            font-weight: normal;
+            font-size: medium;
+            font-style: italic;
+            color: black;
+            line-height: 1;
+            text-align: center;
+        }
+        .item-description {
+            font-weight: normal;
+            color: black;
+            text-align: left;
+            margin-left: 2em;
+        }
+        .item-price {
+            font-style: italic;
+            font-family: Georgia;
+            font-size: smaller;
+            color: black;
+        }
+        .new-item {
+            font-style: italic;
+            color:black;
+        }
+        .warning {
+            font-weight: normal;
+            font-size: medium;
+            font-style: italic;
+            color: rgba(134, 12, 124, 0.904);;
+        }
+    </style>
+</head>
+<body>
+    <div id="left-dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <div id="right-dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+    <h1>Black Goose Bistro · Summer Menu</h1>
+    <p class="location">Baker's Corner, Seekonk, Massachusetts</p>
+    <p class="hours">H<span class="hours1">OURS:</span> M<span class="hours1">ONDAY THROUGH</span>  T<span class="hours1">HURSDAY:</span> <span class="time">11 to 9,</span> F<span class="hours1">RIDAY AND</span> S<span class="hours1">ATURDAY:</span> <span class="time">11 to midnight</span></p>
+    <p class="title">Appetizers</p>
+    <p class="title">Main Courses</p>
+    <p class="title">Traditional Toasts</p>
+    <p class="title">Dessert Selection</p>
+    <h3>APPETIZERS</h3>
+    <p class="item-title1">This season, we explore the spicy flavors of the southwest in our appetizer collection.
+    </p>
+    <p class="item-title">Black bean purses</p>
+    <p class="item-description">
+        Spicy black bean and a blend of mexican cheeses wrapped in sheets of phyllo and baked until golden. <span class="item-price">$3.95</span>
+    </p>
+    <p class="item-title">Southwestern napoleons with lump crab —— <span class="new-item">new item!</span></p>
+    <p class="item-description">
+        Layers of light lump crab meat, bean and corn salsa, and our handmade flour tortillas. <span class="item-price">$7.95</span>
+    </p>
+    
+    <h3>MAIN COURSES</h3>
+    <p class="item-title1">Big, bold flavors are the name of the game this summer. Allow us to assist you with finding the perfect wine.
+    </p>
+    <p class="item-title">Jerk rotisserie chicken with fried plantains —— <span class="new-item">new item!</span></p>
+    <p class="item-description">
+        Tender chicken slow-roasted on the rotisserie, flavored with spicy and fragrant jerk sauce and served with fried plantains and fresh mango. <span style="font-weight: bold; font-style: italic; color: black;">Very spicy.</span><span class="item-price">$12.95</span>
+    </p>
+    <p class="item-title">Shrimp sate kebabs with peanut sauce</p>
+    <p class="item-description">
+        Skewers of shrimp marinated in lemongrass, garlic, and fish sauce then grilled to perfection. Served with spicy peanut sauce and jasmine rice. <span class="item-price">$12.95</span>
+    </p>
+    <p class="item-title">Grilled skirt steak with mushroom fricasee</p>
+    <p class="item-description">
+        Flavorful skirt steak marinated in Asian flavors grilled as you like it<span class="new-item"> *</span>. Served over a blend of sauteed wild mushrooms with a side of blue cheese mashed potatoes. <span class="item-price">$16.95</span>
+    </p>
+    <h3>TRADITIONAL TOASTS</h3>
+    <p class="item-title1">The ultimate comfort food, our traditional toast recipes are adapted from <span class="warning"> The Whitehouse Cookbook</span> published in 1887.
+    </p>
+</body>
+</html>

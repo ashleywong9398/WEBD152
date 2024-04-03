@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharing.com</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .header {
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header .logo {
+            flex: 0 0 auto;
+            font-size: 32px;
+            padding-right: 10px; 
+        margin-right: 10px;
+            color: #227212;
+            
+        }
+        .header .search-bar {
+            flex-grow: 80;
+            flex: 1 1 60%;
+            text-align: center;
+        }
+        .header input[type="text"] {
+            width: 60%;
+            flex: 1;
+            padding: 8px;
+            margin-right: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .sidebar {
+            padding-top: 50px;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+            background-color: #f9f9f9;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .sidebar img, .sidebar button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            text-align: left;
+            border: none;
+            background: none;
+        }
+        .sidebar button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 10px; 
+            border-radius: 5px; 
+            font-size: 14px; 
+        }
+        .main-content {
+            margin-left: 200px;
+            padding-top: 1px;
+            padding: 1px 20px 20px;
+        }
+        .nav-categories {
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            background-color: #fff;
+            margin-top: 45px; 
+            margin-bottom: 0px;
+        }
+        .nav-categories span {
+            margin: 0 60px;
+            cursor: pointer;
+            color: #333;
+            padding: 5px 10px;
+        }
+        .nav-categories span:last-child {
+    margin-right: 0; /* Remove margin for the last span to avoid extra spacing */
+}
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            padding: 10px;
+            margin-top: 1px;
+        }
+        .photo-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 5px;
+            text-align: center; 
+        }
+        .photo-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 0;
+        }
+        .photo-description {
+            margin-top: 5px;
+        }
+        .footer {
+            margin-left: 200px;
+            background-color: #fff;
+            text-align: left;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: calc(100% - 200px);
+        }
+        .footer-line {
+            height: 1px;
+            background-color: #ddd;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .photo-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .sidebar {
+                width: 100px;
+            }
+            .main-content, .footer {
+                margin-left: 100px;
+            }
+            .photo-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .sidebar .post-container {
+    display: flex;
+    align-items: center;
+    margin: 5px 0; 
+}
+
+.sidebar .post-container img {
+    width: 20px; 
+    height: auto; 
+    margin-right: 5px; 
+}
+
+
+.sidebar .post-container span {
+    font-size: 18px; 
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Sharing.com</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+    </div>
+
+    <div class="nav-categories">
+        <span>For sale</span>
+        <span>Jobs</span>
+        <span>Delicacy</span>
+        <span>Fitness</span>
+        <span>Emotion</span>
+        <span>Coupon</span>
+    </div>
+
+    <div class="sidebar">
+        <div class="post-container">
+            <img src="images/refresh.png" alt="Refresh" />
+            <span>Refresh</span>
+        </div>
+        <div class="post-container">
+            <img src="images/plus.png" alt="Post" />
+            <span>Post</span>
+        </div>
+        <div class="post-container">
+            <img src="images/inbox.png" alt="inbox" />
+            <span>Inbox</span>
+        </div>
+        <button>Sign in</button>
+    </div>
+    <div class="main-content">
+        <div class="photo-grid">
+            
+            <div class="photo-item">
+                <img src="images/1.jpg" alt="Description" />
+                <p class="photo-description">Coronado hotel over...</p>
+            </div>
+            <div class="photo-item">
+                <img src="images/2.jpeg" alt="Description" />
+                <p class="photo-description">Stanley All Day Hydration</p>
+            </div>
+            <div class="photo-item">
+                <img src="images/3.jpg" alt="Description" />
+                <p class="photo-description">Christmas tree </p>
+            </div>
+            <div class="photo-item">
+                <img src="images/4.jpg" alt="Description" />
+                <p class="photo-description">Birkenstock new ... </p>
+            </div>
+            <div class="photo-item">
+                <img src="images/5.jpg" alt="Description" />
+                <p class="photo-description">Halloween costume... </p>
+            </div>
+            <div class="photo-item">
+                <img src="images/6.jpg" alt="Description" />
+                <p class="photo-description">Starbucks Buy One Get One Free</p>
+            </div>
+            <div class="photo-item">
+                <img src="images/7.jpg" alt="Description" />
+                <p class="photo-description">Mount Fuji </p>
+            </div>
+            <div class="photo-item">
+                <img src="images/8.jpg" alt="Description" />
+                <p class="photo-description">Restaurant recommendation </p>
+            </div>
+            <div class="photo-item">
+                <img src="images/9.jpg" alt="Description" />
+                <p class="photo-description">Daily exercise</p>
+            </div>
+             <div class="photo-item">
+                <img src="images/10.jpg" alt="Description" />
+                <p class="photo-description">lululemen discount </p>
+            </div> 
+            <div class="photo-item">
+                <img src="images/11.jpg" alt="Description" />
+                <p class="photo-description">Costco beef $3.99 </p>
+            </div>
+             <div class="photo-item">
+                <img src="images/12.jpg" alt="Description" />
+                <p class="photo-description">SD hiking </p>
+            </div> 
+            <div class="photo-item">
+                <img src="images/13.jpg" alt="Description" />
+                <p class="photo-description">LV for sale </p>
+            </div>
+             <div class="photo-item">
+                <img src="images/14.jpg" alt="Description" />
+                <p class="photo-description">Best-tasting bagel </p>
+            </div> 
+            <div class="photo-item">
+                <img src="images/15.jpg" alt="Description" />
+                <p class="photo-description">These 10 states are home</p>
+            </div>
+            <div class="photo-item">
+                <img src="images/16.jpg" alt="Description" />
+                <p class="photo-description">Daily exercise </p>
+            </div>
+            <div class="photo-item">
+                <img src="images/17.jpg" alt="Description" />
+                <p class="photo-description">Hiring Pet Groomer </p>
+            </div>
+            <div class="photo-item">
+                <img src="images/18.jpg" alt="Description" />
+                <p class="photo-description">San Diego Zoo </p>
+            </div>
+            <div class="photo-item">
+                <img src="images/19.jpg" alt="Description" />
+                <p class="photo-description">Secondhand for sale </p>
+            </div>
+            <div class="photo-item">
+                <img src="images/20.jpg" alt="Description" />
+                <p class="photo-description">Texas Real Estate</p>
+            </div>
+           
+      
+        
+            
+           
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-line"></div>
+        &copy; Sharing.com 7370 Opportunity rd Suite K San Diego CA 92111
+    </div>
+</body>
+</html>
