@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400&display=swap" rel="stylesheet">
+  <title>La Jolla Restaurant on the Water -- Shoreline Dining</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: Georgia, serif;
+    }
+
+    #wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #header, #footer {
+      background-color: #4e4a4a;
+      color: white;
+      padding: 15px;
+    }
+
+    #header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: xx-large;
+    }
+
+    #header a.title {
+  text-decoration: none;
+  color: white;
+  font-family: 'Cormorant SC', serif;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+
+    #link-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    #link-container a {
+      color: orange;
+      font-size: small;
+      text-decoration: none;
+    }
+
+    #link-container a:hover {
+      text-decoration: underline;
+    }
+
+    #content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: white;
+      padding: 20px;
+    }
+
+    #image-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    #image-container img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    h1 {
+      color: black;
+      font-size: xx-large;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    h3 {
+      font-size: large;
+      letter-spacing: 2px;
+      color: black;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: medium;
+      color: #333;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
+    .bottom-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .left-container,
+    .right-container {
+      flex: 1;
+      padding: 10px;
+      width: 50%;
+    }
+
+    .right-container {
+      border-left: 1px solid gray;
+    }
+
+    table td {
+      font-family: Georgia, serif;
+      font-size: 16px;
+      color: #333;
+      padding: 5px 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      padding: 5px;
+      font-family: Georgia, serif;
+      font-size: 14px;
+    }
+
+    input[type="submit"] {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #4e4a4a;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-family: Georgia, serif;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: blue;
+    }
+
+    #footer {
+      text-align: center;
+      font-size: small;
+    }
+
+    #footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+
+    #footer a {
+      color: white;
+      font-size: small;
+      text-decoration: none;
+    }
+
+    #footer a:hover {
+      text-decoration: underline dotted white;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <a href="index.html" class="title">ShorelineDining</a>
+      <div id="link-container">
+        <a href="index.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+    </header>
+
+    <div id="content">
+      <div id="image-container">
+        <img src="images/mr-dinner.jpg" alt="Contact" />
+      </div>
+      <h1>CONTACT</h1>
+
+      <div class="bottom-container">
+        <div class="left-container">
+          <h3>Address</h3>
+          <p><a href="https://maps.google.com/maps?q=7370+Opportunity+Rd+Suite+*">7370 Opportunity Rd Suite *</a></p>
+
+          <h3>Parking</h3>
+          <p>Public valet, free street parking and garage parking for a fee</p>
+
+          <h3>Restaurant Hours</h3>
+          <p>LUNCH & DINNER</p>
+          <p>Monday-Friday | 11:00am – 9:00pm</p>
+          <p>BRUNCH, LUNCH & DINNER</p>
+          <p>Saturday & Sunday | 10:00am – 9:00pm</p>
+        </div>
+
+        <div class="right-container">
+          <h3>Contact Us</h3>
+          <form>
+            <table>
+              <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="first_name" required></td>
+              </tr>
+              <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="last_name" required></td>
+              </tr>
+              <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+              </tr>
+              <tr>
+                <td>Phone:</td>
+                <td><input type="tel" name="phone" required></td>
+              </tr>
+              <tr>
+                <td>Address:</td>
+                <td><textarea name="address" rows="4" cols="50" required></textarea></td>
+              </tr>
+            </table>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div id="footer-links">
+        <a href="index.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+      <div id="footer-text">
+        © Copyright S D Restaurants 2023 • All Rights Reserved • Website by Ashley • Privacy Policy & Terms of Use
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

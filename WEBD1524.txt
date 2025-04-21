@@ -1,0 +1,256 @@
+<style>
+  body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  img {
+    margin: 10px;
+  }
+
+  h1 {
+    text-align: center;
+    width: 300px;
+    margin: 10px;
+  }
+</style>
+
+<img src="imagea/picture5.jpg" alt="airplane image" height="168" width="300">
+
+<a   href="images\Seaurchin.jpg">
+<img src="images\Seaurchin.jpg" height="600"> 
+
+
+The top H1 is  font: bold 1.5em "Marko One", Georgia, serif;
+
+The color for "new item" is tomato
+
+The color for the dishes is "sienna"
+
+
+Production Volume: Market Demand, Production Capacity, Supply Chain, Seasonality, Cost Effectiveness, Quality Control
+
+
+
+What is the purpose of a hierarchical task inventory?
+The purpose of an HTI is to break down user tasks into a series of subtasks and steps.
+
+Why do we use it?
+HTI helps to clearly display the hierarchical structure and dependencies between tasks, as well as who is responsible for each task within a team or individually. In this way, teams can better understand the sequence of tasks and work assignments, which aids in improving project organization and coordination. For example, when a project requires breaking down requirements into multiple modules and further into functions, with each function assigned to a specific developer, using HTI can help clarify thinking, ensure task assignments are clear, and enhance work efficiency.
+
+Do you think this is a mandatory process?
+I believe task breakdown is a necessary step, but it doesn't necessarily require the use of the HTI tool specifically. There can be alternative methods to achieve the same goal.
+
+What do you think it shows as a portfolio piece?
+I believe the value of HTI is intangible; it's not something that can be directly experienced like a website or software. Instead, it represents capabilities and experience in project management and task planning, which enhance work efficiency and ensure quality. It showcases expertise in these areas and can serve as evidence of one's ability to effectively manage and plan tasks within a portfolio.
+
+Why do we use it? 
+HTI有助于清晰地显示任务之间的层次结构和依赖关系，以及任务分配给哪些团队成员或个人。通过这种方式，团队可以更好地理解任务的执行顺序和工作分配，有助于提高项目的组织和协调。比如说一个需求分几个模块，模块里在细分到功能，每个功能谁负责开发，使用HTI可以快速理清思路，任务分配清晰，提高工作效率。
+
+ Do you think this is a mandatory process?
+我觉得任务拆解是必须步骤，但不一定使用HTI工具，可以有别的方法替代。
+
+ What do you think it shows as a portfolio piece?
+我觉得HTI的价值是无形的，他不是一个网页一个软件，能体验到。他是种能力、经验。体现在项目管理，任务规划方面提高工作效率，保证质量。
+
+
+
+User accesses Adidas website
+
+
+Determine if it's a new user.Login
+Link external account
+Utilize an external link
+Link successful Register Re-enter password
+Enter password
+Verify password Login  successful Forgot password
+
+Report on what you did and how. Show your hierarchical task inventory diagram. Also think about any tasks that should have been supported by this system or Web site but were not. Discuss these and why you think they are needed.
+I believe there should be an additional feature on the website, which is to provide password rule prompts when entering a password. Especially in the digital age, where people need to manage passwords for various purposes, it's easy to forget passwords. Providing password rule reminders on this website can assist users in recalling their passwords and achieving successful login.
+
+TRADITIONAL TOASTS
+The ultimate comfort food, our traditional toast recipes are adapted from The Whitehouse Cookbook published in 1887.
+
+ body {
+            background-color: lightgreen; 
+            background-image: url('your-image-url.jpg'); 
+            background-repeat: no-repeat; 
+            background-size: cover; 
+            background-position: center center; 
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 1.5em;
+            font-family: "Marko One", Georgia, serif;
+            color: rgba(134, 12, 124, 0.904);
+            text-align: center;
+        }
+
+        /* ... 其他 CSS 样式 ... */
+        
+    </style>
+</head>
+<body>
+    <!-- 页面内容 ... -->
+</body>
+</html>
+请将 'your-image-url.jpg' 替换为您要使用的背景图片的实际URL。此代码将使背景图片居中显示在整个页面上，并且会根据屏幕大小进行自适应。记得保存文件并查看效果。
+
+body {
+    background-color: rgba(231, 241, 173, 0.685);
+    background-image: 
+        url('images/blackgoose.png'), /* 第一个背景图片 */
+        url('images/gooseshadow.png'), /* 第二个背景图片 */
+        url('images/purpledot.png'), /* 紫色点素材 */
+        url('images/plaid.png'), /* plaid.png背景图片 */
+        url('images/purpledot.png'); /* 紫色点素材 */
+
+    background-repeat: 
+        no-repeat, /* 对第一个背景图片不重复 */
+        no-repeat, /* 对第二个背景图片不重复 */
+        repeat-y, /* 紫色点素材垂直方向重复 */
+        no-repeat, /* 对plaid.png不重复 */
+        repeat-y; /* 紫色点素材垂直方向重复 */
+
+    background-size: 
+        30% auto, /* 第一个背景图片 */
+        auto auto, /* 第二个背景图片 */
+        auto auto, /* 紫色点素材 */
+        85% 28%, /* plaid.png背景图片 */
+        auto auto; /* 紫色点素材 */
+
+    background-position: 
+        center 30%, /* 第一个背景图片 */
+        60% 28%, /* 第二个背景图片 */
+        left top, /* 紫色点素材在左上角 */
+        center top, /* plaid.png在顶部居中 */
+        right top; /* 紫色点素材在右上角 */
+}
+
+
+<div id="wrapper">
+<header id="header">header</header>
+<section id="left">Left</section>
+<section id="right">Right</section>
+</div>
+
+#wrapper { width: 960px;
+margin-left: auto;
+margin-right: auto; }
+#left { width: 200px;
+float: left;)
+#right { margin-left: 200px;}
+
+
+
+body {
+    background-color: rgba(231, 241, 173, 0.685);
+    background-image: 
+        url('images/blackgoose.png'), 
+        url('images/gooseshadow.png'), 
+        url('images/purpledot.png'), 
+        url('images/purpledot.png'), 
+        url('images/purpledot.png'), 
+        url('images/purpledot.png'), 
+        url('images/purpledot.png'), 
+        url('images/purpledot.png'), 
+        url('images/purpledot.png'), 
+        url('images/purpledot.png'),
+        url('images/plaid.png'); 
+
+    background-repeat: 
+        no-repeat,
+        no-repeat, 
+        no-repeat, 
+        no-repeat,
+        no-repeat, 
+        no-repeat, 
+        no-repeat, 
+        no-repeat,
+        no-repeat, 
+        no-repeat, 
+        no-repeat; 
+
+    background-size: 
+        30% auto, 
+        5%, 
+        auto, 
+        auto,
+        auto, 
+        auto, 
+        auto, 
+        auto,
+        auto, 
+        auto,
+        85% 30%; 
+
+    background-position: 
+        center 30%, 
+        80% 22%, 
+        7% top, 
+        93% top, 
+        7% 5%, 
+        93% 5%,
+        7% 10%, 
+        93% 10%,
+        7% 15%, 
+        93% 15%,
+        center top; 
+}
+
+
+
+Appetizers
+Main Courses
+Traditional Toasts
+Dessert Selection
+
+
+
+
+
+I have a happy family and I'm a mother of two children. Currently, I have a job unrelated to web design, which I don't particularly enjoy. I tend to be a bit introverted and prefer working in a quiet environment. I'm still learning English, aiming to improve my language skills. That's a bit about me.
+
+I am studying this course because I have a passion for design, and creating beautiful things brings me great satisfaction. Choosing this profession also aligns with my personality. I hope that completing this course will enhance my abilities in web design and help me find a suitable job.
+
+<p>
+  Although I am still a beginner in using CSS, I am deeply fascinated by its magic. Every time I use CSS to change the style of a webpage and see the immediate transformation, it brings me great satisfaction. I know there are many advanced techniques and strategies that I have yet to explore, but I firmly believe that with continued learning and practice, I will become more proficient in this area. CSS is not just code; it is the art of bringing web pages to life with beauty and vibrancy.
+</p>
+
+
+
+<header class="bg-secondary bg-gradient text-white">
+  <div class="container px-4 text-center">
+  <h1 class="fw-bolder">Welcome to Scrolling Nav</h1> // Update
+  <p class="lead">A functional Bootstrap 5 boilerplate for one page scrolling websites</p> //Update
+  <a class="btn btn-lg btn-light" href="#about">Start scrolling!</a> //Update
+  </div>
+</header>
+
+
+https://hawk198723.github.io/WEBD168/lesson03/03_box_model_complete.html
+
+Part I
+https://ashleywong9398.github.io/WEBD168/lesson11
+Part II
+https://ashleywong9398.github.io/WEBD168/lesson10/bio.html
+
+
+
+https://ashleywong9398.github.io/WEBD168/lesson07/testimonials-grid-section/grid2.html
+
+https://ashleywong9398.github.io/WEBD168/lesson07/testimonials-grid-section
+
+
+Part II
+https://ashleywong9398.github.io/WEBD164/finalproject
+
+https://hawk198723.github.io/webd168/lesson10/part02/myBio.html
+
+https://hawk198723.github.io/webd168/myPortfolio
+大家好，这是我的个人主页，我觉得他在我这完成度是90%。我喜欢我的设计，他是通过技术和审美结合的产物。我做主页是失败的，点击导航链接后页面会滚动到相应的部分，但是 header 仍然保持在页面顶部固定不动
+https://gnarfizz.github.io/webd168/final/index.html#about

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400&display=swap" rel="stylesheet">
+  <title>La Jolla Restaurant on the Water -- Shoreline Dining</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: Georgia, serif;
+    }
+
+    #wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #header, #footer {
+      background-color: #4e4a4a;
+      color: white;
+      padding: 15px;
+    }
+
+    #header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: xx-large;
+    }
+
+    #header a.title {
+  text-decoration: none;
+  color: white;
+  font-family: 'Cormorant SC', serif;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+
+    #link-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    #link-container a {
+      color: orange;
+      font-size: small;
+      text-decoration: none;
+    }
+
+    #link-container a:hover {
+      text-decoration: underline;
+    }
+
+    #content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: white;
+      padding: 20px;
+    }
+
+    #image-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    #image-container img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    h1 {
+      color: black;
+      font-size: xx-large;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    h3 {
+      font-size: large;
+      font-family: Georgia, serif;
+      letter-spacing: 4px;
+      color: black;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: Georgia, serif;
+      font-size: large;
+      color: #333;
+      line-height: 1.6;
+      text-align: center;
+      margin: 0 50px 20px 50px;
+    }
+
+    .item {
+      font-style: italic;
+      font-family: Georgia, serif;
+      font-size: large;
+      color: black;
+      text-align: left;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .bottom-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .left-container,
+    .right-container {
+      flex: 1;
+      padding: 10px;
+      width: 50%;
+    }
+
+    .left-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .right-container {
+      border-left: 1px solid rgb(182, 175, 175);
+      padding-top: 10px;
+    }
+
+    .left-container video {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #footer {
+      text-align: center;
+      font-size: small;
+    }
+
+    #footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+
+    #footer a {
+      color: white;
+      font-size: small;
+      text-decoration: none;
+    }
+
+    #footer a:hover {
+      text-decoration: underline dotted white;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <a href="index.html" class="title">ShorelineDining</a>
+      <div id="link-container">
+        <a href="index.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+    </header>
+
+    <div id="content">
+      <div id="image-container">
+        <img src="images/about-the-restaurant.jpg" alt="About" />
+      </div>
+      <h1>ABOUT US</h1>
+      <p>Welcome to our seaside restaurant! We are a newly opened Western-style restaurant located in a beautiful coastal area. The atmosphere is warm and inviting, nestled along the coast with stunning seaside views. We take pride in offering delicious Western cuisine to satisfy your taste buds. Whether you're indulging in fresh seafood, creative seasonal dishes, or savoring our signature specialties, you'll find satisfying culinary delights here.</p>
+
+      <div class="bottom-container">
+        <div class="left-container">
+          <video controls width="500" height="500">
+            <source src="images/dining.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="right-container">
+          <h3>Welcome to</h3>
+          <h3>SHORELINE DINING</h3>
+          <p class="item">Our culinary team carefully prepares each dish to ensure an unforgettable dining experience for you. In addition to great food, our restaurant provides a pleasant ambiance where you can gather with friends and loved ones, celebrate special occasions, or simply enjoy a tranquil evening by the shore. Whether you're a local resident or a traveler from afar, we welcome you to join our extended family and explore our exciting menu and captivating seaside views. Thank you for choosing to dine with us, and we look forward to providing you with a wonderful dining experience.</p>
+          <p class="item">If you require additional information and/or photography, please contact Shoreline Dining's Marketing Department at 858.756.**** or Marketing@Shoreline.com. Thank you for your interest!</p>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div id="footer-links">
+        <a href="index.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+      <div id="footer-text">
+        © Copyright S D Restaurants 2023 • All Rights Reserved • Website by Ashley • Privacy Policy & Terms of Use
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400&display=swap" rel="stylesheet">
+  <title>La Jolla Restaurant on the Water -- Shoreline Dining</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: Georgia, serif;
+    }
+
+    #wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #header, #footer {
+      background-color: #4e4a4a;
+      color: white;
+      padding: 15px;
+    }
+
+    #header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: xx-large;
+    }
+    #header a.title {
+  text-decoration: none;
+  color: white;
+  font-family: 'Cormorant SC', serif;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+
+    #link-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    #link-container a {
+      color: orange;
+      font-size: small;
+      text-decoration: none;
+    }
+
+    #link-container a:hover {
+      text-decoration: underline;
+    }
+
+    #content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: white;
+      padding: 20px;
+    }
+
+    #image-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    #image-container img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+   h1 {
+  color: black;
+  font-size: xx-large;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: x-large;
+  font-weight: bold;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: medium;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: small;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+    .bottom-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .left-container,
+    .right-container {
+      flex: 1;
+      padding: 10px;
+      width: 50%;
+    }
+
+    .right-container {
+      border-left: 1px solid rgb(189, 184, 184);
+    }
+
+    #footer {
+      text-align: center;
+      font-size: small;
+    }
+
+    #footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+
+    #footer a {
+      color: white;
+      font-size: small;
+      text-decoration: none;
+    }
+
+    #footer a:hover {
+      text-decoration: underline dotted white;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <a href="index.html" class="title">ShorelineDining</a>
+      <div id="link-container">
+        <a href="index.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+    </header>
+
+    <div id="content">
+      <div id="image-container">
+        <img src="images/ahi-tuna.jpg" alt="Menu" />
+      </div>
+      <h1>MENU</h1>
+
+      <div class="bottom-container">
+        <div class="left-container">
+          <h2>Small Plates</h2>
+          <h3>MOROCCAN LAMB LOLLIPOPS  30</h3>
+          <p>red horseradish cream, tzatziki, pistachio-almond crunch, mint chimichurri</p>
+          <h3>JAMON IBERICO TOAST  30</h3>
+          <p>whipped goat cheese, buttered brioche, pomegranate molasses, mission fig</p>
+          <h3>JAPANESE A5 NIGIRI  40</h3>
+          <p>sushi rice, drunken wagyu, miso butter, osetra caviar</p>
+          <h3>CHICKEN LIVER PATE  26</h3>
+          <p>blackberry jam, caramelized onion, grilled baguette</p>
+          <h3>SURF & TURF  44</h3>
+          <p>hokkaido scallop, kurobuta pork belly, caviar, bacon whiskey jam</p>
+          <h3>LA JOLLA REEF  28</h3>
+          <p>seaweed salad, shoyu dressing, cucumber, crispy cauliflower mushroom, ume shiso furikake, house-made tofu</p>
+          <h3>SPANISH OCTOPUS  32</h3>
+          <p>smoked cauliflower puree, mojo rojo, crispy quinoa, shishito, soy glaze</p>
+          <h3>DRY AGED BLUEFIN TUNA CARPACCIO  38</h3>
+          <p>lemon oil, ginger, yuzu, black winter truffle, garlic chili aioli</p>
+          <h3>CAVIAR service market price</h3>
+          <p>served with chive, butter brushed brioche loaf, condiments</p>
+
+          <h2>Main Course</h2>
+          <h3>LOCAL BLUEFIN TUNA  55</h3>
+          <p>edamame, pickled ginger, fresno chiles, togarashi aioli</p>
+          <h3>BAJA CALIFORNIA SWORDFISH  58</h3>
+          <p>pasilla de Oaxaca, hominy, black lemon, hazelnut gremolata, charred avocado and tomato</p>
+          <h3>SCALLOPS AND PRAWNS  65</h3>
+          <p>black harissa, watercress, piquillo, charred eggplant quinoa, epazote</p>
+          <h3>KING SALMON  58</h3>
+          <p>wagyu fat sous vide carrot, coconut salsa macha, huitlacoche, cassis chayote</p>
+          <h3>PACIFICO SEABASS  63</h3>
+          <p>Szechuan peppercorn sauce, thai papaya salad, pickled peppers, shimenji</p>
+          <h3>ALASKAN HALIBUT  60</h3>
+          <p>poblano cream, baby corn, tarbais bean, lemon pepper pearl, cherry tomato</p>
+        </div>
+
+        <div class="right-container">
+          <h2>Cocktails</h2>
+          <h3>WHISTLE PIG WAGYU OLD FASHIONED  35</h3>
+          <p>wagyu infused whistle pig 10yr, r&d aromatic #7 bitters, demerara sugar</p>
+          <h3>SASSY BURRO  20</h3>
+          <p>absolut elyx, raspberries, simple syrup, ginger beer</p>
+          <h3>SUNSET VIEW  20</h3>
+          <p>plantation pineapple rum, coconut syrup, lime, strawberry</p>
+          <h3>OAXACAN NIGHT  30</h3>
+          <p>illegal mezcal, st.germain, lavender blackberry shrub, agave, tajin</p>
+          <h3>STAY GOLD  34</h3>
+          <p>blanton's bourbon, lemon juice, agave syrup, egg white, r&d bitters</p>
+          <h3>RIP TIDE  24</h3>
+          <p>monkey 47 gin, st. germain, lemon juice, simple syrup, sparkling rose</p>
+
+          <h2>Wines By The Glass</h2>
+          <h3>BUBBLES</h3>
+          <p>Prosecco, Avissi, Extra Day, Veneto, Itl, DOC   13</p>
+          <p>Aphros Pan, Brut Rose, Vinho Verde, Prt   15</p>
+          <p>Taittinger, Brut, La Francaise, Champagne, Fra   25</p>
+          <p>Charles Heidsick, Reserve, Brut Rose, Champagne, Fra  35</p>
+
+          <h3>WHITES</h3>
+          <p>Sauvignon Blanc, Domaine Andrea Vatan, Les Charmes, Sancerre, Fra   17</p>
+          <p>Chardonnay, Lloyd, Los Carneros, Napa, Ca   21</p>
+          <p>Rosé, Crazy Creatures, Niederösterreich, Aut  14</p>
+
+          <h3>REDS</h3>
+          <p>Pinot Noir, Failla, Sonoma Coast, Sonoma, Ca  20</p>
+          <p>Pinot Noir, Coeur de Terre, Willamette, Or   16</p>
+          <p>Tempranillo, La Rioja Alta, Vina Alberdi, Reserva, Rioja, Spa   15</p>
+          <p>TZinfandel, Saxon Brown, Stonewall Block, Sonoma, Ca   16</p>
+          <p>Cabernet Sauvignon, Bella Union, Napa, Ca   35</p>
+
+          <p>For the full wine list, please click here. Corkage fee is $45 per bottle for wines not featured at the restaurant. Limit of 2 bottles</p>
+
+          <h2>Desserts    17</h2>
+          <h3>SPINDRIFT CAPPUCCINO COBBLESTONE PIE</h3>
+          <p>hazelnuts, chocolate nuggets, maker's mark bourbon sauce</p>
+          <h3>STRAWBERRY CHEESECAKE</h3>
+          <p>graham cracker crust, strawberry coulis, chantilly cream</p>
+          <h3>GINGER DACQUOISE</h3>
+          <p>pineapple confit, meringue, star anise</p>
+          <h3>SORBET TRILOGY</h3>
+          <p>cactus pear, blood orange, coconut, thyme</p>
+          <h3>ORANGE CREAMSICLE CRÈME BRÛLÉE</h3>
+          <p>grand marnier, candied plantain chip, seasonal berries, pineapple compote</p>
+          <h3>CHOCOLATE LAVA CAKE</h3>
+          <p>vanilla ice cream, strawberry compote, whipped cream</p>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div id="footer-links">
+        <a href="index.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="About.html">About</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+      <div id="footer-text">
+        © Copyright S D Restaurants 2023 • All Rights Reserved • Website by Ashley • Privacy Policy & Terms of Use
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
